@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call From"
+        android:id="@+id/fCallFromLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fCallFromTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/fCallFromLabel"
+        android:layout_alignLeft="@+id/fCallFromLabel"
+        android:layout_alignStart="@+id/fCallFromLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caller Name"
+        android:id="@+id/fCallerNameLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_below="@+id/fCallFromTextView"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fCallerNameTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/fCallerNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        android:id="@+id/fGroupNameLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_below="@+id/fCallerNameTextView"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fGroupNameTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/fGroupNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/fDateLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_alignTop="@+id/fCallFromLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fDateTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/fDateLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/fTimeLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_alignTop="@+id/fCallerNameLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fTimeTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/fTimeLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/fStatusLabel"
+        android:layout_alignTop="@+id/fGroupNameLabel"
+        android:layout_alignRight="@+id/fTimeTextView"
+        android:layout_alignEnd="@+id/fTimeTextView"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fStatusTextView"
+        android:layout_below="@+id/fStatusLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/black" />
+</RelativeLayout>

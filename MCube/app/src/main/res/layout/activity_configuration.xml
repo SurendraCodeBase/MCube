@@ -1,0 +1,152 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mcube.app.ConfigurationActivity"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/header_blue"
+            android:id="@+id/relativeLayout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Configuration"
+                android:id="@+id/textView2"
+                android:textColor="@android:color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/mcube_logo"
+                android:layout_marginRight="15dp"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="49dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="Username(email)"
+            android:background="@drawable/rounded_edittext"
+            android:layout_below="@+id/relativeLayout"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:padding="5dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPassword"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:id="@+id/show_password"
+            android:layout_alignTop="@+id/password"
+            android:layout_alignBottom="@+id/password"
+            android:layout_toRightOf="@+id/password"
+            android:layout_toEndOf="@+id/password"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_blue" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/serverName"
+            android:ems="10"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:hint="Enter Server Name" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/serverName"
+            android:layout_alignLeft="@+id/serverName"
+            android:layout_alignStart="@+id/serverName"
+            android:layout_toLeftOf="@+id/show_password"
+            android:layout_toStartOf="@+id/show_password"
+            android:layout_marginTop="18dp"
+            android:id="@+id/relativeLayout2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit_button"
+                android:text="Submit"
+                android:background="@color/header_blue"
+                android:layout_alignParentTop="true"
+                android:textColor="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_button"
+                android:text="Cancel"
+                android:background="@color/header_blue"
+                android:textColor="@android:color/white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_marginTop="28dp"
+            android:visibility="gone"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/operation_messages"
+            android:layout_below="@+id/progressBar2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+</ScrollView>
+

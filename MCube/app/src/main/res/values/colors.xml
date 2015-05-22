@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_blue">#ff335086</color>
+    <color name="text_blue">#007AFF</color>
+
+    <color name="tabMedium">#2B2B2B</color>
+    <color name="tabDark">#000000</color>
+    <color name="tabTransparent">#10ffffff</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="gray">#FFC0C0C0</color>
+    <color name="dark_gray">#777777</color>
+    <color name="sign_out_red">#ffb90202</color>
+</resources>

@@ -1,0 +1,22 @@
+<sql>
+
+    <statement>
+        CREATE TABLE IF NOT EXISTS ACCOUNT (
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        AUTH_KEY TEXT UNIQUE,
+        BUSINESS_NAME TEXT,
+        CODE INTEGER,
+        EMP_CONTACT TEXT,
+        EMP_EMAIL TEXT,
+        EMP_NAME TEXT,
+        MESSAGE TEXT,
+        RECORD_LIMIT INTEGER
+        )
+    </statement>
+
+    <statement>
+        INSERT INTO ACCOUNT(AUTH_KEY,BUSINESS_NAME,CODE,EMP_CONTACT,EMP_EMAIL,EMP_NAME,MESSAGE,RECORD_LIMIT)
+        VALUES(NULL,NULL,999,NULL,NULL,NULL,NULL,20)
+    </statement>
+
+</sql>

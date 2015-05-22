@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call From"
+        android:id="@+id/tCallFromLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tCallFromTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tCallFromLabel"
+        android:layout_alignLeft="@+id/tCallFromLabel"
+        android:layout_alignStart="@+id/tCallFromLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caller Name"
+        android:id="@+id/tCallerNameLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_below="@+id/tCallFromTextView"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tCallerNameTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tCallerNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        android:id="@+id/tGroupNameLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_below="@+id/tCallerNameTextView"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tGroupNameTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tGroupNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/tDateLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_alignTop="@+id/tCallFromLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tDateTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tDateLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/tTimeLabel"
+        android:textColor="@color/dark_gray"
+        android:layout_alignTop="@+id/tCallerNameLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tTimeTextView"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tTimeLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/tStatusLabel"
+        android:layout_alignTop="@+id/tGroupNameLabel"
+        android:layout_alignRight="@+id/tTimeTextView"
+        android:layout_alignEnd="@+id/tTimeTextView"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tStatusTextView"
+        android:layout_below="@+id/tStatusLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
